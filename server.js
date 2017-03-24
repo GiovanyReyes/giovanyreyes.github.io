@@ -15,5 +15,5 @@ app.listen(port, () => {
 })
 
 app.use(function (req, res) {
-    res.send('hello from node mon')
+    res.send('hello from nodemon')
 })
