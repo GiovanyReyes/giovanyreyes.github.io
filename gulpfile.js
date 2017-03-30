@@ -77,7 +77,7 @@ function buildVendor() {
 
 gulp.task('default', ['dev'])
 gulp.task('dev', ['vendor', 'js', 'watch'])  //functionality gulp uses to build folder
-gulp.task('heroku',['vendor', 'js'])
+gulp.task('heroku', ['vendor', 'js'])
 
 var knownOptions = {
     string: 'packageName',
