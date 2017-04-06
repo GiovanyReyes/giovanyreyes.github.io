@@ -1,4 +1,4 @@
-/* global */
+/* global angular */
 (function () {
     'use strict'
     angular.module('public.layout')

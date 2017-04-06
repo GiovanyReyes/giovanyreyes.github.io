@@ -1,15 +1,14 @@
 const router = require('express').Router()
-// const userRoutes = require('./users.routes')
 const siteRoutes = require('./site.routes')
-// const photoRoutes = require('./photo.routes')
-// const mapRoutes = require('./map.routes')
+const contactRoutes = require('./contact.routes')
+
 
 
 // reginster routes //////////////////
 router.use(siteRoutes)
+router.use('/api/contact', contactRoutes)
 // router.use('/api/maps', mapRoutes)
-// router.use('/api/photo', photoRoutes)
-// router.use('/api/users', userRoutes)
+
 
 
 // Handle API 404

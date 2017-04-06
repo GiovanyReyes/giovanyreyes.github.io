@@ -20,18 +20,6 @@
                     }
                 }
             })
-            .state('app.contact',{
-                url:'/contact',
-                data:{
-                    title:'contact'
-                },
-                views:{
-                    'content@app':{
-                        controller: 'homeController as homeCtrl',
-                        templateUrl:'/public/modules/home/views/contact.html'
-                    }
-                }
-            })
     }
 
 })()

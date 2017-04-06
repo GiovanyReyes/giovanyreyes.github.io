@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const siteController= require('../controllers/sites.controller.js')
+const siteController= require('../controllers/sites.controller')
 
 // frontend routes ====================
 // route to handle all angular requests

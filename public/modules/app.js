@@ -6,7 +6,8 @@
         'ui.router',
         'ui.bootstrap',
         'public.layout',
-        'public.home'
+        'public.home',
+        'public.contact'
     ])
 
     .config(RouteConfig)
