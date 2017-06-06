@@ -1,12 +1,15 @@
 const router = require('express').Router()
 const siteRoutes = require('./site.routes')
 const contactRoutes = require('./contact.routes')
+const travelRoutes = require('./travel.routes')
 
 
 
 // reginster routes //////////////////
-router.use(siteRoutes)
+
 router.use('/api/contact', contactRoutes)
+router.use('/api/travel', travelRoutes)
+router.use(siteRoutes) // need to have this last!
 // router.use('/api/maps', mapRoutes)
 
 

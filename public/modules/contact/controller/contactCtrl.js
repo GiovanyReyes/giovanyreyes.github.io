@@ -1,24 +1,27 @@
 /* global angular */
 
-(function (){
+(function () {
     'use strict'
     angular.module('public.contact')
-    .controller('contactController', contactController)
-    contactController.$inject=['contactService']
-    function contactController(contactService){
+        .controller('contactController', contactController)
+    contactController.$inject = ['contactService']
+
+    function contactController(contactService) {
         var vm = this
+        vm.email = {}
 
-        vm.postEmail = _postEmail
+        vm.sendEmail = sendEmail
 
-        function _postEmail(){
-            contactService.postEmail(data, onEmailSuccess, onError)
+        function sendEmail() {
+            contactService.postEmail(vm.email, onEmailSuccess, onError)
         }
 
-        function onEmailSuccess(data){
+        function onEmailSuccess(data) {
+            console.log(data._id)
             console.log('Email Sent')
         }
 
-        function onError(err){
+        function onError(err) {
             console.log(err)
         }
     }

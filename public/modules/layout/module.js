@@ -18,7 +18,7 @@
                         templateUrl: '/public/modules/layout/views/navigation.html',
                         controller: 'navigationController as navCtrl'
                     },
-                    'media@app': {
+                    'footer@app': {
                         templateUrl: '/public/modules/layout/views/footer.html',
                         controller: 'navigationController as navCtrl'
                     }

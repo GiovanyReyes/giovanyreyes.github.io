@@ -5,9 +5,14 @@
     angular.module('public',[
         'ui.router',
         'ui.bootstrap',
+        'ngAnimate',
+
+        //app 
         'public.layout',
         'public.home',
-        'public.contact'
+        'public.contact',
+        'public.travel',
+    
     ])
 
     .config(RouteConfig)

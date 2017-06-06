@@ -1,7 +1,7 @@
 /* global angular */
 (function () {
     'use strict'
-    angular.module('public.home', ['ui.router'])
+    angular.module('public.home', ['ui.router' ])
         .config(RouteConfig)
 
     RouteConfig.$inject = ['$stateProvider']
